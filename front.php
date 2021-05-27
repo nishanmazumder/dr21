@@ -42,35 +42,12 @@ get_header(); ?>
             );
 
             if ($blocksQuery->have_posts()) :
-                while ($blocksQuery->have_posts()) : $blocksQuery->the_post(); ?>
-
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="h-box">
-                            <div class="h-img">
-                                <?php echo the_post_thumbnail('full', array('class' => 'img-responsive')) ?>
-                            </div>
-                            <div class="h-box-info">
-                                <div class="pull-left">
-                                    <h4><?php echo the_title(); ?></h4>
-                                </div>
-                                <div class="pull-right">
-                                    <a href="<?php echo esc_url(get_post_meta(get_the_ID(), 'nmdr21TextUrl', true)); ?>" class="btn-h-ply">
-                                        <?php
-                                        $btnText  = get_post_meta(get_the_ID(), 'nmdr21TextName', true);
-                                        echo esc_html($btnText);
-                                        ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <?php endwhile;
+                while ($blocksQuery->have_posts()) : $blocksQuery->the_post();
+                    get_template_part('template-parts/content', 'section');
+                endwhile;
             else :
                 echo '<h1 style="color: #fff; font-size: 28px;">Post Not Found!</h1>';
-            endif;
-            ?>
-
+            endif; ?>
         </div>
 
         <!-- Social -->
@@ -92,26 +69,9 @@ get_header(); ?>
             );
 
             if ($socialQuery->have_posts()) :
-                while ($socialQuery->have_posts()) : $socialQuery->the_post(); ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="h-box">
-                            <div class="h-img"><?php echo the_post_thumbnail('full', array('class' => 'img-responsive')) ?></div>
-                            <div class="h-box-info">
-                                <div class="pull-left nm-left-mob">
-                                    <h4><?php echo the_title(); ?></h4>
-                                </div>
-                                <div class="pull-right nm-right-mob">
-                                    <a href="<?php echo esc_url(get_post_meta(get_the_ID(), 'nmdr21TextUrl', true)); ?>" class="btn-h-ply">
-                                        <?php
-                                        $btnText  = get_post_meta(get_the_ID(), 'nmdr21TextName', true);
-                                        echo esc_html($btnText);
-                                        ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <?php endwhile;
+                while ($socialQuery->have_posts()) : $socialQuery->the_post();
+                    get_template_part('template-parts/content', 'social');
+                endwhile;
             else :
                 echo '<h1 style="color: #fff; font-size: 28px;">Post Not Found!</h1>';
             endif;

@@ -96,6 +96,7 @@ global $nm3webet;
 	<!-- END NAV MENU CSS -->
 
 	<!-- Slide -->
+	<?php if(is_front_page()){ ?>
 	<div class="container-fluid nm-container">
 		<div class="row">
 			<div class="col-md-12 nm-slider">
@@ -108,4 +109,5 @@ global $nm3webet;
 			</div>
 		</div>
 	</div>
+	<?php } ?>
 	<!-- End Slide -->

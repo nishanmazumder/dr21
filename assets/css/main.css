@@ -4471,6 +4471,36 @@ select.top-select {
     color: #337ab7;
 }
 
+/* Single */
+.nm-title{
+    margin-bottom: 30px;
+}
+.nm-title-area{}
+.nm-post-info{
+    display: inline;
+}
+.nm-post-category{
+    display: inline;
+    float: right;
+}
+.nm-post-img{
+    width: 100%;
+    margin: 20px auto;
+    height: 400px;
+    background-position: top center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nm-post-img img{
+    width: 100%;
+}
+
+.nm-post-content{
+    /* width: 80%;
+    margin: 0px auto;
+} */
+
 
 @media only screen and (max-width:1030px){
     body{

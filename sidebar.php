@@ -8,20 +8,6 @@
  * @package 3WEBET
  */
 
-// if (!is_active_sidebar('sidebar-1')) {
-// 	return;
-// }
+dynamic_sidebar('sidebar-main');
 ?>
 
-<aside id="secondary" class="widget-area">
-
-
-	<?php
-	if (is_page()) {
-		dynamic_sidebar('sidebar-cmd');
-	} else {
-		dynamic_sidebar('sidebar-main');
-	}
-	?>
-
-</aside><!-- #secondary -->
