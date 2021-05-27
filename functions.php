@@ -181,17 +181,17 @@ function nmbet_widgets_init()
 		)
 	);
 
-	register_sidebar(
-		array(
-			'name'          => esc_html__('CMD', 'nmbet'),
-			'id'            => 'sidebar-cmd',
-			'description'   => esc_html__('Add widgets here.', 'nmbet'),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
+	// register_sidebar(
+	// 	array(
+	// 		'name'          => esc_html__('CMD', 'nmbet'),
+	// 		'id'            => 'sidebar-cmd',
+	// 		'description'   => esc_html__('Add widgets here.', 'nmbet'),
+	// 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+	// 		'after_widget'  => '</section>',
+	// 		'before_title'  => '<h2 class="widget-title">',
+	// 		'after_title'   => '</h2>',
+	// 	)
+	// );
 }
 add_action('widgets_init', 'nmbet_widgets_init');
 

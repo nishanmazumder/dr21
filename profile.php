@@ -1,24 +1,8 @@
 <?php
 /*
-	Template Name: Media
+	Template Name: Profile
 */
 get_header(); ?>
-
-  <!-- Slide -->
-  <div class="container-fluid nm-container">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- <img class="img-responsive" src="images/common/media-banner.jpg" alt=""> -->
-        <!-- <php get_the_post_thumbnail(); ?> -->
-            <?php 
-            if ( has_post_thumbnail() ) {
-                the_post_thumbnail('full', array('class'=>'img-responsive'));
-            } 
-            ?>
-      </div>
-    </div>
-  </div>
-  <!-- End Slide -->
 
 <!-- Start Content -->
 <div id="media-bg">

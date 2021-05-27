@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,14 +16,12 @@
 get_header();
 ?>
 <!---------main body--------------->
-<main>
-    <div class="container nmBlog">
-        <div class="row no-gutters">
-            <div class="col-md-12">
-                <?php the_content(); ?>
-            </div>
-        </div>
-    </div>
-</main>
 
-<?php get_footer(); ?>
+<!-- Content -->
+<div id="box-content">
+    <div class="container nm-container">
+        <?php the_content(); ?>
+    </div>
+</div>
+
+<?php get_footer();
