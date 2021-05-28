@@ -10,12 +10,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 get_header();
 ?>
-<!---------main body--------------->
 
 <!-- Content -->
 <div id="box-content">

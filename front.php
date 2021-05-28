@@ -12,13 +12,13 @@ get_header(); ?>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <!-- marquee -->
                 <div class="annoucement">
-                    <div class=" clearfix">
-                        <div class="runningtext">
-                            <marquee scrolldelay="150">
-                                <?php echo $nm3webet['nmHomeAnnouncement']; ?>
-                            </marquee>
-                        </div>
+                    <div class="runningtext">
+                        <img src="<?php echo get_template_directory_uri(); ?>./assets/images/announce.png" alt="">
+                        <marquee scrolldelay="150">
+                            <?php echo $nm3webet['nmHomeAnnouncement']; ?>
+                        </marquee>
                     </div>
+
                 </div>
             </div>
         </div>

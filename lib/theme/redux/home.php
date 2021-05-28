@@ -22,7 +22,7 @@ Redux::set_section(
 			array(
 				'id'       => 'nmBannerUpload',
 				'type'     => 'select',
-				'title'    => __('Upload Banner', 'nmbet'),
+				'title'    => __('Banner Mode', 'nmbet'),
 				'options'  => array(
 					'1' => 'Banner Image',
 					'2' => 'Slider'
@@ -36,7 +36,7 @@ Redux::set_section(
 				'title'    => __('Banner Image', 'nmbet'),
 				'desc'     => esc_html__('Please upload Banner Image.', 'nmbet'),
 				'default'  => array(
-					'url' => get_template_directory() . '/assets/images/common/main-banner-1.jpg',
+					'url' => get_template_directory() . './assets/images/main-banner-1.jpg',
 				),
 				'required' => array('nmBannerUpload','equals','1')
 
@@ -130,7 +130,7 @@ Redux::set_section(
 	array(
 		'title'            => esc_html__('Join Now', 'nmbet'),
 		'id'               => 'nm_header_btn',
-		'desc'             => esc_html__('Join Now button fro header.', 'nmbet'),
+		'desc'             => esc_html__('Join Now button for header.', 'nmbet'),
 		'subsection' => true,
 		'icon'             => 'el el-pencil',
 		'fields'           => array(

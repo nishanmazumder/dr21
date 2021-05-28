@@ -20,7 +20,7 @@ global $nm3webet;
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+	<link rel="icon" href="<?php echo $nm3webet['nm_fav_ico']['url']; ?>">
 	<title>Dirk Kuyt x 3webet</title>
 	<?php wp_head(); ?>
 </head>
@@ -101,7 +101,7 @@ global $nm3webet;
 		<div class="row">
 			<div class="col-md-12 nm-slider">
 				<?php if ($nm3webet['nmBannerUpload'] == 1) { ?>
-					<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/main-banner-1.jpg" alt="">
+					<img class="img-responsive" src="<?php echo $nm3webet['nmBannerImage']['url']; ?>" alt="">
 				<?php } else { 
 					echo do_shortcode($nm3webet['nmhomeSlider']);
 				} ?>

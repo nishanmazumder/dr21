@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 dynamic_sidebar('sidebar-main');

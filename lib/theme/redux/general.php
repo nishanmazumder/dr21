@@ -25,7 +25,16 @@ Redux::set_section(
 				'url'      => true,
 				'title'    => __('Upload Logo', 'nmbet'),
 				'default'  => array(
-					'url' => get_template_directory() . '/assets/images/common/logo.png',
+					'url' => get_template_directory() . './assets/images/logo.png',
+				),
+			),
+			array(
+				'id'       => 'nm_fav_ico',
+				'type'     => 'media',
+				'url'      => true,
+				'title'    => __('Site Icon', 'nmbet'),
+				'default'  => array(
+					'url' => get_template_directory() . './assets/images/favicon.ico',
 				),
 			),
 			array(

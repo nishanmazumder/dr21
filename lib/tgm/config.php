@@ -99,14 +99,6 @@ function nmbet_register_required_plugins() {
 		),
 
 		array(
-			'name'      => 'Elementor – Header, Footer & Blocks Template',
-			'slug'      => 'header-footer-elementor',
-			//'source'    => get_template_directory() . '/lib/tgm/plugins/megamenu.2.9.3.zip',
-			'required'  => true,
-			'version'   => '1.5.9'
-		),
-
-		array(
 			'name'      => 'Smart Slider 3',
 			'slug'      => 'smart-slider-3',
 			//'source'    => get_template_directory() . '/lib/tgm/plugins/megamenu.2.9.3.zip',

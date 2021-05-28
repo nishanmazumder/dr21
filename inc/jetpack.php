@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 /**

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 get_header();

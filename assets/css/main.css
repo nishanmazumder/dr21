@@ -373,9 +373,10 @@ a.forgotlink:hover {
 ***** Annoucement ****
 ****************************/
 .annoucement {
-    background: url(../images/common/announce-bg.jpg) no-repeat;
-    height: 39px;
-    margin: 0px 26px;
+    /* background: url(../images/common/announce-bg.jpg) no-repeat; */
+    /* height: 39px; */
+    margin: 10px 26px;
+    overflow: hidden;
 }
 
 .annoucement .icon img {
@@ -407,11 +408,20 @@ a.forgotlink:hover {
     color: #dac98c;
     /* width: 1039px; */
     line-height: 14px;
-    position: relative;
-    top: 12px;
-    padding-left: 91px;
+    /* position: relative; */
+    /* top: 12px; */
+    /* padding-left: 91px; */
 }
 
+.annoucement .runningtext img{
+    float: left;
+    margin-left: 15px;
+}
+.annoucement .runningtext marquee{
+    float: left;
+    margin-top: -25px;
+    margin-left: 52px;
+}
 .annoucement2 {
     background: #000;
     margin: 0px 0px 0px 0px;
@@ -874,7 +884,7 @@ button.close span {
 
 .menuWrapper {
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
     font-weight: 400;
     font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "å¾®è½¯é›…é»‘", STXihei, "åŽæ–‡ç»†é»‘", sans-serif;
     background: #f7f8fa;
@@ -4274,7 +4284,7 @@ select.top-select {
     display: none;
     display: none;
     display: none;
-    display: ;
+    display: none;
 }
 
 .hqr-box {
@@ -4414,9 +4424,9 @@ select.top-select {
 .nm-header{
     margin: 30px auto;
 }
-.nm-slider{
+/* .nm-slider{
     margin-bottom: 15px;
-}
+} */
 .nm-anouncement{
     border: none !important;
 }
@@ -4430,6 +4440,7 @@ select.top-select {
 .nm-section{
     width: 95%;
     margin: 20px auto;
+    margin-top: 0px;
 }
 .nm-social{
     width: 95%;
@@ -4499,7 +4510,8 @@ select.top-select {
 .nm-post-content{
     /* width: 80%;
     margin: 0px auto;
-} */
+    */
+} 
 
 
 @media only screen and (max-width:1030px){
@@ -4635,9 +4647,16 @@ select.top-select {
     }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:490px){
     .nm-logo{
-        width: 200px;
+        width: 200px !important;
+    }
+    .annoucement .runningtext marquee {
+        margin-top: -30px;
+    }
+    .nm-news-section{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .btn-register{
         line-height: 40px;

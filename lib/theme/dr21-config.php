@@ -120,7 +120,7 @@ $args = array(
 	'global_variable'           => 'nm3webet',
 
 	// Show the time the page took to load, etc (forced on while on localhost or when WP_DEBUG is enabled).
-	'dev_mode'                  => true,
+	'dev_mode'                  => false,
 
 	// Enable basic customizer support.
 	'customizer'                => true,
@@ -177,7 +177,7 @@ $args = array(
 	'output_tag'                => true,
 
 	// Disable the footer credit of Redux. Please leave if you can help it.
-	'footer_credit'             => '',
+	'footer_credit'             => false,
 
 	// If you prefer not to use the CDN for ACE Editor.
 	// You may download the Redux Vendor Support plugin to run locally or embed it in your code.
@@ -351,19 +351,19 @@ Redux::set_section(
 require_once get_template_directory() . '/lib/theme/redux/home.php';
 
 //Blog
-Redux::set_section(
-	$opt_name,
-	array(
-		'title'            => esc_html__('Blog', 'nmbet'),
-		'id'               => 'blog',
-		'desc'             => esc_html__('These fields for only blog', 'nmbet'),
-		//'subsection'       => true,
-		//'customizer_width' => '200px',
-		'icon'             => 'el el-blogger'
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title'            => esc_html__('Blog', 'nmbet'),
+// 		'id'               => 'blog',
+// 		'desc'             => esc_html__('These fields for only blog', 'nmbet'),
+// 		//'subsection'       => true,
+// 		//'customizer_width' => '200px',
+// 		'icon'             => 'el el-blogger'
+// 	)
+// );
 
-require_once get_template_directory() . '/lib/theme/redux/blog.php';
+// require_once get_template_directory() . '/lib/theme/redux/blog.php';
 
 //Footer
 Redux::set_section(

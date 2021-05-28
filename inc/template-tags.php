@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 if ( ! function_exists( 'nmbet_posted_on' ) ) :
