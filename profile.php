@@ -13,7 +13,7 @@ get_header(); ?>
                 <!-- marquee -->
                 <div class="annoucement">
                     <div class="runningtext">
-                        <img src="<?php echo get_template_directory_uri(); ?>./assets/images/announce.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/announce.png" alt="">
                         <marquee scrolldelay="150">
                             <?php echo $nm3webet['nmHomeAnnouncement']; ?>
                         </marquee>
@@ -33,19 +33,5 @@ get_header(); ?>
     </div>
 </div>
 <!-- End Content -->
-
-<script>
-    $('.count').each(function () {
-      $(this).prop('Counter', 0).animate({
-        Counter: $(this).text()
-      }, {
-        duration: 7000,
-        easing: 'swing',
-        step: function (now) {
-          $(this).text(Math.ceil(now));
-        }
-      });
-    });
-  </script>
 
 <?php get_footer(); ?>

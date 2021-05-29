@@ -13,7 +13,7 @@ get_header(); ?>
                 <!-- marquee -->
                 <div class="annoucement">
                     <div class="runningtext">
-                        <img src="<?php echo get_template_directory_uri(); ?>./assets/images/announce.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/announce.png" alt="">
                         <marquee scrolldelay="150">
                             <?php echo $nm3webet['nmHomeAnnouncement']; ?>
                         </marquee>

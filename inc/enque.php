@@ -17,5 +17,6 @@ function nmbet_scripts() {
     wp_enqueue_script( 'nm-bootstrap', get_template_directory_uri() . '/assets/js/functions.js', '', '', true);
     wp_enqueue_script( 'nm-smooth', get_template_directory_uri() . '/assets/js/bootstrap.min.js', '', '', true);
     wp_enqueue_script( 'nm-aos', get_template_directory_uri() . '/assets/js/main.js', '', '', true);
+    wp_enqueue_script( 'nm-count', get_template_directory_uri() . '/assets/js/count.js', array('nm-Jquery-1'), '', true);
 }
 add_action( 'wp_enqueue_scripts', 'nmbet_scripts' );

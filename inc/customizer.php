@@ -2,7 +2,7 @@
 /**
  * 3WEBET Theme Customizer
  *
- * @package 3WEBET
+ * @package DR21
  */
 
 /**
